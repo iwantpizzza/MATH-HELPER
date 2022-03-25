@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            Form1.pervaya.Show();
         }
 
         private void Form3_Shown(object sender, EventArgs e)

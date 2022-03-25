@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            Form1.pervaya.Show();
         }
         public static string theme;
 

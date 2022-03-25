@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             Random stepen = new Random();
-            zadanie = stepen.Next(1, 7);
+            zadanie = stepen.Next(1, 13);
             if (zadanie == 1)
             {
                 n = 2;
@@ -96,8 +96,8 @@ namespace WindowsFormsApp1
             }
             if (zadanie == 3)
             {
-                n = 2;
-                a = 4;
+                n = 3;
+                a = 512;
             }
             if (zadanie == 4)
             {
@@ -119,16 +119,48 @@ namespace WindowsFormsApp1
                 n = 7;
                 a = 128;
             }
+            if (zadanie == 8)
+            {
+                n = 8;
+                a = 1;
+            }
+            if (zadanie == 9)
+            {
+                n = 3;
+                a = -1;
+            }
+            if (zadanie == 10)
+            {
+                n = 5;
+                a = -1;
+            }
+            if (zadanie == 11)
+            {
+                n = 9;
+                a = 512;
+            }
+            if (zadanie == 12)
+            {
+                n = 10;
+                a = 1024;
+            }
+            if (zadanie == 13)
+            {
+                n = 2;
+                a = 128;
+            }
             label1.Text = n.ToString();
             label2.Text = ("√" + a).ToString();
             s = Math.Pow((double)a, (double)1 / n);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+       
+        
+
+        private void Form5_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
-            this.Close();
+            Form1.pervaya.Show();
+
         }
     }
 }
